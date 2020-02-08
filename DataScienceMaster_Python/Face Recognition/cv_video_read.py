@@ -15,7 +15,7 @@ while True:
 	cv2.imshow('Gray Frame',gray_frame)
 
 	# wait for a user input -q, then you will stop the loop
-	key_pressed = cv2.waitKey(1) & 0xFF # bitwise and
+	key_pressed = cv2.waitKey(1) & 0xFF # bitwise and # here we get the ascii value of the key that the user pressed 
 	if key_pressed == ord('q'):  # ord returns ascii value of the given character
 		break
 
